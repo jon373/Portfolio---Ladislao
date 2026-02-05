@@ -4,7 +4,7 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>JM Portfolio</title>
     <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
 
 
@@ -14,77 +14,51 @@
 
 <body>
 
-    <!-------------------------- Header Area -------------------------->
-    <header class="header-area">
-        <div class="container">
-            <div class="header">
-               
-                <a href="" class="logo">
-                    <p>373off</p>
-                </a>
-                   
-                <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                
-                <div class="menu_icon">
-                    <i class="fa fa-bars"></i>
-                </div>
+<!-------------------------- Dark Mode Toggle -------------------------->
+<button id="themeToggle" class="theme-btn">
+    <i class="fas fa-moon"></i>
+</button>
 
-            </div>
-        </div> 
-    </header>
+<!-------------------------- Back to Top Button -------------------------->
+<button id="backToTop" class="back-to-top-btn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-------------------------- Header Area removed-------------------------->
  
-    <!-------------------------- Home Page -------------------------->
-    <div class="FirstElement" id="home">
-        <div class="profile-photo">
-            <img src="files/me2.jpg" alt="profile picture">
-        </div>
-        <div class="profile-text">
-            <h5>Hi I'm </h5><br>
-            <h1>John Ladislao</h1><br>
-            <p>Software Dev
-            </p>
-            <div class="btn-group">
-                <a href="mailto:josi.ladislao.up@phinmaed.com" class="btn">Contact</a>
-            </div>
-
-            <div class="social">
-                <a href="mailto:josi.ladislao.up@phinmaed.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://github.com/jon373"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/john-mark-sison-ladislao-3a2536287/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+<!-------------------------- Home Page -------------------------->
+<div class="FirstElement" id="home">
+    <div class="profile-photo">
+        <img src="files/me.jpeg" alt="profile picture">
+    </div>
+    <div class="profile-text">
+        <h5>Hi I'm </h5><br>
+        <h1>John Mark Ladislao</h1><br>
+        <p>Full Stack Developer
+        </p>
+        <!-- Replace social icons with Contact Me button -->
+        <div class="profile-actions">
+            <a href="#contact" class="contact-btn">Contact Me</a>
         </div>
     </div>
+</div>
 
-        <!-------------------------- About Section -------------------------->
+    <!-------------------------- About Section -------------------------->
     <section class="about-area" id="about">
         <div class="container">
-            <div class="about">
-                
-                <div class="about-content">
-                    <h4>About Me</h4>
-                    <ul>
-                      <li>My name is John Mark Sison Ladislao. I am a student of the Phinma University of Pangasinan and currently 3rd Year College as Bachelor of Science Information Technology course. I lived in the Capital of Pangasinan in the town of Lingayen where they called Pangasinan best Bagoong. As a beginner young professional, I made an ambition where I wanted to be and learn an Software Dev and a Cybersec. I wanted to explore and learn in able to be professional just like others.
-
-                        This would be difficult as a beginner like me but I will accept those difficulties and build my own path in able to achieve my goals because I believe this is where we start. I will persue and achieve it. With ongoing growth and learning every single day, I will keep moving forward.</li>
-                    </ul>
-                </div>
-                                  
-                <div class="about-skills">
-                    <ul>
-                        <li>Name: John Mark Sison Ladislao</li>
-                        <li>Age: 20</li>     
-                        <li>From: Philippines (Pilipinas)</li>
-                        <li>Email: josi.ladislao.up@phinmaed.com</li>
-                        <li>Experience: none</li>
-                    </ul>
-                </div>
+            <div class="about-title">
+                <h4>About Me</h4> <!-- Moved outside the container box -->
+            </div>
+            <div class="about-container"> <!-- This now contains only the content -->
+                <p>
+                    I am John Mark Ladislao, Graduated from PHINMA University of Pangasinan as Bachelor of Science in Information Technology.
+                </p>
+                <p>
+                    As an aspiring Full Stack Developer, I spent my college years developing academic projects and personal both front-end design and back-end logic.
+                </p>
+                <p>
+                    I love the challenge of building something from scratch. As a beginner, I am passionate on clean code, user experience and I am highly motivated to apply my academic foundation to real-world projects. 
+                </p>
             </div>
         </div>
     </section>
@@ -108,7 +82,7 @@
                                         </h3>
                                         <h4 class="timeline-title">University of Pangasinan</h4>
                                         <h4 class="timeline-title">
-                                            <i class="fa fa-calendar"></i> 2021-202?
+                                            <i class="fa fa-calendar"></i> 2021-2025
                                         </h4>
                                     </div>
                                     <div class="timeline-item">
@@ -131,7 +105,24 @@
                         <div class="row">
                             <div class="timeline-box">
                                 <div class="timeline">
-                                    
+                                    <!-- Timeline-item -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-title">
+                                            IT Support
+                                        </h3>
+                                        <h4 class="timeline-title"> Concentrix - Baguio City PH</h4>
+                                        <h4 class="timeline-title">
+                                            <i class="fa fa-calendar "></i> January 2025 - April 2025
+                                        </h4>
+                                        </li>
+                                        <li class="timeline-text"> Hardware and Software troubleshooting</li>
+                                        <li class="timeline-text"> Respond to Helpdesk Ticket</li>
+                                        <li class="timeline-text"> Convigure Avaya Phones and IGEL</li>
+                                        <li class="timeline-text"> Software installations and Updates</li>
+                                        <li class="timeline-text"> Assist Active Directory user management</li>
+                                    </div> 
+
                                     <!-- Timeline-item -->
                                     <div class="timeline-item">
                                         <div class="circle-dot"></div>
@@ -140,28 +131,10 @@
                                         </h3>
                                         <h4 class="timeline-title">Phinma UPang</h4>
                                         <h4 class="timeline-title">
-                                            <i class="fa fa-calendar"></i>2021-202?
+                                            <i class="fa fa-calendar "></i> 2021-2025
                                         </h4>
-                                        <li class="timeline-text">I am currently studying as BSIT at the University of Pangasinan. I believe in my strengths that will achieve my goals and dreams in my life no matter how hard it is, myself will keep moving forward. 
-                                            <br>This is my present skills:
-                                        </li>
-                                        <li class="timeline-text">C++</li>
-                                        <li class="timeline-text">Java</li>
-                                        <li class="timeline-text">HTML, CSS, JS</li>
-                                        <li class="timeline-text">Flutter</li>
-                                        <li class="timeline-text">Android Std.</li>
-                                        <li class="timeline-text">PHP</li>
-                                    </div> 
-                                    <!-- Timeline-item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-title">Cybersecurity/ Ethical Hacking</h3>
-                                        <h4 class="timeline-title">Self learning</h4>
-                                        <h4 class="timeline-title">
-                                            <i class="fa fa-calendar">?</i>
-                                        </h4>
-                                        <li class="timeline-text">I just like it to learn because it really interest me. One of the reasons why it really interest me is how they do it. I watch video tutorial and learn it on my own. This one is one of my dream and career.</li>
-                                </div>
+                                        <li class="timeline-text">Graduated as BSIT from the University of Pangasinan with experience in developing academic and personal projects. With this experience, I am driven by my passion for developing and my belief in continuous learning. No matter how challenging doing a developing project may be, I remain focused and committed to giving the best output.
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -170,108 +143,188 @@
         </section>
 
 
-        <!-------------------------- Projects -------------------------->
-    <section class="project-content" id="projects">
-        <div class="container">
-            <div class="project-title">
-                <h4>My Projects</h4>
-                <p>Discover my projects, where creativity meets innovation</p>
+<!-------------------------- Projects -------------------------->
+<section class="project-content" id="projects">
+    <div class="container">
+        <div class="project-title">
+            <h4>Projects</h4>
+            <p>Discover my recent projects and contribution</p>
+        </div>
+        <div class="projects-container">
+            <!-- 1st Project -->
+            <div class="project-item">
+                <h4>MangaRe</h4>
+                <p>A application where you can read free manga, manwha, manhua everywhere you go!</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Android Std</span>
+                    <span class="tech-tag">Mobile Development</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">XML</span>
+                </div>
             </div>
-            <div class="projects">
-                <!-- 1st Project -->
-                <div class="project">
-                    <img src="files/manga.jpg" alt="">
-                    <h4>MangaRe</h4>
-                    <p>A application where you can read free manga, manwha, manhua everywhere you go!</p>
+            <!-- 2nd Project -->
+            <div class="project-item">
+                <h4>FoodHub</h4>
+                <p>Mobile recipe application book for Traditional Filipino dishes that offers simple, beginner friendly instructions. Features recipe management and step by step guide. </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Recipe Management</span>
+                    <span class="tech-tag">Mobile UI/UX</span>
+                    <span class="tech-tag">Mobile Development</span>
                 </div>
-                 <!-- 2nd Project -->
-                 <div class="project">
-                    <img src="files/fh.png" alt="">
-                    <h4>foodHub</h4>
-                    <p>Application that offers free Recipes, Tutorials everywhere!</p>
+            </div>
+            <!-- 3rd Project -->
+            <div class="project-item">
+                <h4>Pet Adoption</h4>
+                <p>A mobile application like Tinder app. It is seamless platform for users to connect with their perfect furry companions. It is build on Flutter with PHP and MySQL.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Mobile Development</span>
                 </div>
-                <!-- 3rd Project -->
-                <div class="project">
-                    <img src="files/PA.png" alt="">
-                    <h4>Pet Adoption</h4>
-                    <p>Pet Adoption app is designed to connect who wants to find animal friends to adopt. This app making it easier for user to find a perfect furry companion. It aims to facilitate the adoption process, improve animal welfare and promote responsible pet ownership</p>
+            </div>
+            <!-- 4th Project -->
+            <div class="project-item">
+                <h4>Nihongo App</h4>
+                <p>It is a Hardcoded mobile application for Japanese learners who having hardtime to memorize kanji. It is a Kanji review tool with flashcards and quiz features, designed to help learners understand and memorize Kanji meanings.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Mobile UI/UX</span>
+                    <span class="tech-tag">Mobile Development</span>
                 </div>
-                
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-------------------------- Skills -------------------------->
-    <section class="skills-content" id="skills">
-        <div class="container">
-            <div class="skills-title">
-                <h4>My Skills</h4>
-                <p>Here are my skills.</p>
+<section class="skills-content" id="skills">
+    <div class="container">
+        <div class="skills-title">
+            <h4>Skills and Technologies</h4>
+        </div>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-item">Flutter</div>
             </div>
             <div class="skill">
-                <div class="skills">
-                    <img src="files/icon1.png" alt="">
-                    <h4>Flutter</h4>
-                </div>
-                 <div class="skills">
-                    <img src="files/php.png" alt="">
-                    <h4>PHP</h4>
-                </div>
-                <div class="skills">
-                    <img src="files/icon3.png" alt="">
-                    <h4>Git</h4>
-                </div>
-                <div class="skills">
-                    <img src="files/icon5.png" alt="">
-                    <h4>Android Std</h4>
-                </div>
-                <div class="skills">
-                    <img src="files/icon6.png" alt="">
-                    <h4>MySQL</h4>
-                </div>
-                <div class="skills">
-                    <img src="files/icon7.png" alt="">
-                    <h4>Java</h4>
-                </div>
-                <div class="skills">
-                    <img src="files/Web.png" alt="">
-                    <h4>HTML</h4>
-                </div>
+                <div class="skill-item">PHP</div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">Firebase</div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">Git</div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">Github</div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">Android Std</div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">MySQL</div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">JavaScript</div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">Node.js</div>
+            </div>
+            <div class="skill">
+                <div class="skill-item">HTML</div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-        <!-------------------------- Contact Me -------------------------->
-
-    <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact Me</h4>
-                <p>Get In Touch</p>
-            </div>
-            <div class="contact">
-                <form action="https://formspree.io/f/xvojkpqb" method="post">
-                    <input type="text" name="NAME" placeholder="Name" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message" class="submit">
-                </form>
-                <span id="msg"></span>
-            </div>
+<!-------------------------- Contact Me -------------------------->
+<section class="contact-content" id="contact">
+    <div class="container">
+        <div class="contact-title">
+            <h4>Contact Me</h4>
+            <p>Get In Touch</p>
         </div>
-    </section>
         
-    <!-------------------------- JS -------------------------->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-    
-    <!-------------------------- Footer section -------------------------->
-   <footer class="footer">
-    <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
-   </footer>
+        <div class="contact-box">
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h5>Email</h5>
+                        <p>ladislao.josi@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h5>Location</h5>
+                        <p>Pangasinan, Philippines</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h5>Phone</h5>
+                        <p>+63 976 026 6064</p>
+                    </div>
+                </div>
+                
+                <!-- Social Buttons Section -->
+                <div class="social-buttons">
+                    <h5>Connect With Me</h5>
+                    <div class="button-group">
+                        <a href="https://www.linkedin.com/in/john-mark-sison-ladislao-3a2536287/" target="_blank" class="social-btn linkedin-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/jon373" target="_blank" class="social-btn github-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="viber://chat?number=+639760266064" class="social-btn viber-btn">
+                            <i class="fab fa-viber"></i> Viber
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="opportunity-form">
+                <h4>Let's Work Together!</h4>
+                <p class="intro-text">I am interested in hearing about new opportunities. I am open to both full-time positions and freelance projects.</p>
+                
+                <div class="availability-section">
+                    <h3>I am available for:</h3>
+                    <ul class="services-list">
+                        <li>Full Stack Development</li>
+                        <li>Web Development</li>
+                        <li>Mobile App Development</li>
+                        <li>Flutter Development</li>
+                    </ul>
+                </div>
+                
+                <p class="contact-note">You can reach me out on my contact information!</p>
+                
+                <div class="email-action">
+                    <a href="mailto:ladislao.josi@gmail.com" class="email-btn">
+                        Send Me an Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-------------------------- JS -------------------------->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+    
+<!-------------------------- Footer section -------------------------->
+<footer class="footer">
+    <div class="container">
+        <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
+    </div>
+</footer>
 </body>
 </html>
