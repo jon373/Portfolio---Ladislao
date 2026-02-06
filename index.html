@@ -6,152 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Mark Ladislao</title>
     <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
-
-
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head> 
 
 <body>
 
-<!-------------------------- Dark Mode Toggle -------------------------->
+<!-- Dark Mode Toggle -->
 <button id="themeToggle" class="theme-btn">
     <i class="fas fa-moon"></i>
 </button>
 
-<!-------------------------- Back to Top Button -------------------------->
+<!-- Back to Top Button -->
 <button id="backToTop" class="back-to-top-btn">
     <i class="fas fa-arrow-up"></i>
 </button>
 
-<!-------------------------- Header Area removed-------------------------->
- 
-<!-------------------------- Home Page -------------------------->
-<div class="FirstElement" id="home">
+<!-- Home Page -->
+<section class="FirstElement" id="home">
     <div class="profile-photo">
-        <img src="files/me.jpeg" alt="profile picture">
+        <img src="files/me.jpeg" alt="John Mark Ladislao">
     </div>
     <div class="profile-text">
-        <h5>Hi I'm </h5><br>
-        <h1>John Mark Ladislao</h1><br>
-        <p>Full Stack Developer
-        </p>
-        <!-- Replace social icons with Contact Me button -->
+        <h5>Hi I'm</h5>
+        <h1>John Mark Ladislao</h1>
+        <p>Full Stack Developer</p>
         <div class="profile-actions">
             <a href="#contact" class="contact-btn">Contact Me</a>
         </div>
     </div>
-</div>
+</section>
 
-    <!-------------------------- About Section -------------------------->
-    <section class="about-area" id="about">
-        <div class="container">
-            <div class="about-title">
-                <h4>About Me</h4> <!-- Moved outside the container box -->
-            </div>
-            <div class="about-container"> <!-- This now contains only the content -->
-                <p>
-                    I am John Mark Ladislao, Graduated from PHINMA University of Pangasinan as Bachelor of Science in Information Technology.
-                </p>
-                <p>
-                    As an aspiring Full Stack Developer, I spent my college years developing academic projects and personal both front-end design and back-end logic.
-                </p>
-                <p>
-                    I love the challenge of building something from scratch. As a beginner, I am passionate on clean code, user experience and I am highly motivated to apply my academic foundation to real-world projects. 
-                </p>
-            </div>
+<!-- About Section -->
+<section class="about-area" id="about">
+    <div class="container">
+        <div class="section-title">
+            <h4>About Me</h4>
         </div>
-    </section>
+        <div class="about-container">
+            <p>I am John Mark Ladislao, Graduated from PHINMA University of Pangasinan as Bachelor of Science in Information Technology.</p>
+            <p>As an aspiring Full Stack Developer, I spent my college years developing academic projects and personal both front-end design and back-end logic.</p>
+            <p>I love the challenge of building something from scratch. As a beginner, I am passionate on clean code, user experience and I am highly motivated to apply my academic foundation to real-world projects.</p>
+        </div>
+    </div>
+</section>
 
-
-        <!-------------- Education & Internship -------------->
-        <section class="education-content" id="education">
-            <div class="container">
-                <div class="row">
-                    <div class="education ">
-                        <h3 class="title">Education</h3>
-                        <div class="row">
-                            <div class="timeline-box">
-                                <div class="timeline">
-    
-                                    <!-- Timeline-item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-title">
-                                            Bachelor of Science Information Technology (BSIT)
-                                        </h3>
-                                        <h4 class="timeline-title">University of Pangasinan</h4>
-                                        <h4 class="timeline-title">
-                                            <i class="fa fa-calendar"></i> 2021-2025
-                                        </h4>
-                                    </div>
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-title">
-                                            General Academic Strand (GAS)
-                                        </h3>
-                                        <h4 class="timeline-title">Pangasinan National Highschool</h4>
-                                        <h4 class="timeline-title">
-                                            <i class="fa fa-calendar"></i> 2019-2021
-                                        </h4>
-                                    </div> 
-                                    
-                                </div>
-                            </div>
-                        </div>
+<!-- Education & Experience -->
+<section class="education-content" id="education">
+    <div class="container">
+        <div class="education-grid">
+            <!-- Education -->
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-title">Bachelor of Science Information Technology (BSIT)</h3>
+                        <h4 class="timeline-subtitle">University of Pangasinan</h4>
+                        <span class="timeline-date"><i class="fa fa-calendar"></i> 2021-2025</span>
                     </div>
-                    <div class="internship">
-                        <h3 class="title">Experience</h3>
-                        <div class="row">
-                            <div class="timeline-box">
-                                <div class="timeline">
-                                    <!-- Timeline-item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-title">
-                                            IT Support
-                                        </h3>
-                                        <h4 class="timeline-title"> Concentrix - Baguio City PH</h4>
-                                        <h4 class="timeline-title">
-                                            <i class="fa fa-calendar "></i> January 2025 - April 2025
-                                        </h4>
-                                        </li>
-                                        <li class="timeline-text"> Hardware and Software troubleshooting</li>
-                                        <li class="timeline-text"> Respond to Helpdesk Ticket</li>
-                                        <li class="timeline-text"> Convigure Avaya Phones and IGEL</li>
-                                        <li class="timeline-text"> Software installations and Updates</li>
-                                        <li class="timeline-text"> Assist Active Directory user management</li>
-                                    </div> 
-
-                                    <!-- Timeline-item -->
-                                    <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                        <h3 class="timeline-title">
-                                            Bachelor of Science Information Technology (BSIT)
-                                        </h3>
-                                        <h4 class="timeline-title">Phinma UPang</h4>
-                                        <h4 class="timeline-title">
-                                            <i class="fa fa-calendar "></i> 2021-2025
-                                        </h4>
-                                        <li class="timeline-text">Graduated as BSIT from the University of Pangasinan with experience in developing academic and personal projects. With this experience, I am driven by my passion for developing and my belief in continuous learning. No matter how challenging doing a developing project may be, I remain focused and committed to giving the best output.
-                                    </div>
-                            </div>
-                        </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-title">General Academic Strand (GAS)</h3>
+                        <h4 class="timeline-subtitle">Pangasinan National Highschool</h4>
+                        <span class="timeline-date"><i class="fa fa-calendar"></i> 2019-2021</span>
                     </div>
                 </div>
             </div>
-        </section>
 
+            <!-- Experience -->
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-title">IT Support</h3>
+                        <h4 class="timeline-subtitle">Concentrix - Baguio City PH</h4>
+                        <span class="timeline-date"><i class="fa fa-calendar"></i> January 2025 - April 2025</span>
+                        <ul class="timeline-list">
+                            <li>Hardware and Software troubleshooting</li>
+                            <li>Respond to Helpdesk Ticket</li>
+                            <li>Configure Avaya Phones and IGEL</li>
+                            <li>Software installations and Updates</li>
+                            <li>Assist Active Directory user management</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-title">Bachelor of Science Information Technology (BSIT)</h3>
+                        <h4 class="timeline-subtitle">Phinma UPang</h4>
+                        <span class="timeline-date"><i class="fa fa-calendar"></i> 2021-2025</span>
+                        <p class="timeline-text">Graduated as BSIT from the University of Pangasinan with experience in developing academic and personal projects. With this experience, I am driven by my passion for developing and my belief in continuous learning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-------------------------- Projects -------------------------->
+<!-- Projects -->
 <section class="project-content" id="projects">
     <div class="container">
-        <div class="project-title">
+        <div class="section-title">
             <h4>Projects</h4>
             <p>Discover my recent projects and contribution</p>
         </div>
         <div class="projects-container">
-            <!-- 1st Project -->
             <div class="project-item">
                 <h4>MangaRe</h4>
                 <p>A application where you can read free manga, manwha, manhua everywhere you go!</p>
@@ -162,10 +122,9 @@
                     <span class="tech-tag">XML</span>
                 </div>
             </div>
-            <!-- 2nd Project -->
             <div class="project-item">
                 <h4>FoodHub</h4>
-                <p>Mobile recipe application book for Traditional Filipino dishes that offers simple, beginner friendly instructions. Features recipe management and step by step guide. </p>
+                <p>Mobile recipe application book for Traditional Filipino dishes that offers simple, beginner friendly instructions. Features recipe management and step by step guide.</p>
                 <div class="project-tech">
                     <span class="tech-tag">Flutter</span>
                     <span class="tech-tag">Recipe Management</span>
@@ -173,7 +132,6 @@
                     <span class="tech-tag">Mobile Development</span>
                 </div>
             </div>
-            <!-- 3rd Project -->
             <div class="project-item">
                 <h4>Pet Adoption</h4>
                 <p>A mobile application like Tinder app. It is seamless platform for users to connect with their perfect furry companions. It is build on Flutter with PHP and MySQL.</p>
@@ -184,10 +142,9 @@
                     <span class="tech-tag">Mobile Development</span>
                 </div>
             </div>
-            <!-- 4th Project -->
             <div class="project-item">
                 <h4>Nihongo App</h4>
-                <p>It is a Hardcoded mobile application for Japanese learners who having hardtime to memorize kanji. It is a Kanji review tool with flashcards and quiz features, designed to help learners understand and memorize Kanji meanings.</p>
+                <p>It is a Hardcoded mobile application for Japanese learners who having hardtime to memorize kanji. It is a Kanji review tool with flashcards and quiz features.</p>
                 <div class="project-tech">
                     <span class="tech-tag">Flutter</span>
                     <span class="tech-tag">Mobile UI/UX</span>
@@ -198,51 +155,31 @@
     </div>
 </section>
 
-    <!-------------------------- Skills -------------------------->
+<!-- Skills -->
 <section class="skills-content" id="skills">
     <div class="container">
-        <div class="skills-title">
+        <div class="section-title">
             <h4>Skills and Technologies</h4>
         </div>
         <div class="skills-container">
-            <div class="skill">
-                <div class="skill-item">Flutter</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">PHP</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">Firebase</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">Git</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">Github</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">Android Std</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">MySQL</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">JavaScript</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">Node.js</div>
-            </div>
-            <div class="skill">
-                <div class="skill-item">HTML</div>
-            </div>
+            <span class="skill-item">Flutter</span>
+            <span class="skill-item">PHP</span>
+            <span class="skill-item">Firebase</span>
+            <span class="skill-item">Git</span>
+            <span class="skill-item">Github</span>
+            <span class="skill-item">Android Std</span>
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">HTML</span>
         </div>
     </div>
 </section>
 
-<!-------------------------- Contact Me -------------------------->
+<!-- Contact -->
 <section class="contact-content" id="contact">
     <div class="container">
-        <div class="contact-title">
+        <div class="section-title">
             <h4>Contact Me</h4>
             <p>Get In Touch</p>
         </div>
@@ -272,17 +209,16 @@
                     </div>
                 </div>
                 
-                <!-- Social Buttons Section -->
                 <div class="social-buttons">
                     <h5>Connect With Me</h5>
                     <div class="button-group">
-                        <a href="https://www.linkedin.com/in/john-mark-sison-ladislao-3a2536287/" target="_blank" class="social-btn linkedin-btn">
+                        <a href="https://www.linkedin.com/in/john-mark-sison-ladislao-3a2536287/" target="_blank" class="social-btn">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
-                        <a href="https://github.com/jon373" target="_blank" class="social-btn github-btn">
+                        <a href="https://github.com/jon373" target="_blank" class="social-btn">
                             <i class="fab fa-github"></i> GitHub
                         </a>
-                        <a href="viber://chat?number=+639760266064" class="social-btn viber-btn">
+                        <a href="viber://chat?number=+639760266064" class="social-btn">
                             <i class="fab fa-viber"></i> Viber
                         </a>
                     </div>
@@ -305,26 +241,22 @@
                 
                 <p class="contact-note">You can reach me out on my contact information!</p>
                 
-                <div class="email-action">
-                    <a href="mailto:ladislao.josi@gmail.com" class="email-btn">
-                        Send Me an Email
-                    </a>
-                </div>
+                <a href="mailto:ladislao.josi@gmail.com" class="email-btn">Send Me an Email</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-------------------------- JS -------------------------->
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <small class="copyright">&copy; Copyright 2024. All rights reserved.</small>
+    </div>
+</footer>
+
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="script.js"></script>
-    
-<!-------------------------- Footer section -------------------------->
-<footer class="footer">
-    <div class="container">
-        <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
-    </div>
-</footer>
+
 </body>
 </html>
